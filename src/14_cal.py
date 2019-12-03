@@ -22,3 +22,12 @@ and does the following:
 import sys
 import calendar
 from datetime import datetime
+
+def project_calendar(*argv): 
+  for arg in argv: 
+    if len(*argv) > 1:
+      return print("Heyyyooooo")
+    else: 
+        return print("Nothing to see here")
+	
+project_calendar(input("Enter a month, or a month and year:  "))

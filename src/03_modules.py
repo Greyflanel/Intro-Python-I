@@ -1,31 +1,14 @@
-"""
-In this exercise, you'll be playing around with the sys module,
-which allows you to access many system specific variables and
-methods, and the os module, which gives you access to lower-
-level operating system functionality.
-"""
-
 import sys
-# See docs for the sys module: https://docs.python.org/3.7/library/sys.html
+print('Length of sys.argv :', len(sys.argv))
+print('Argument(s)  :', str(sys.argv))
 
-# Print out the command line arguments in sys.argv, one per line:
-# YOUR CODE HERE
-
-# Print out the OS platform you're using:
-# YOUR CODE HERE
-
-# Print out the version of Python you're using:
-# YOUR CODE HERE
-
+import platform
+print('OS Platform  :', sys.platform)
+print('Python Version  :', platform.python_version())
 
 import os
-# See the docs for the OS module: https://docs.python.org/3.7/library/os.html
+print('Current Process ID :', os.getpid())
+print('Current Working Directory  :', os.getcwd())
 
-# Print the current process ID
-# YOUR CODE HERE
-
-# Print the current working directory (cwd):
-# YOUR CODE HERE
-
-# Print out your machine's login name
-# YOUR CODE HERE
+import getpass
+print('Current login name  :', getpass.getuser())
